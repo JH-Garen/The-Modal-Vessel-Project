@@ -44,7 +44,7 @@ h1 {
     font-size: 1.1rem;
     margin: 15px 0;
     opacity: 0; /* Hidden initially */
-    animation: fadeInAndOut 3s forwards;  /* 3 seconds total */
+    animation: fadeInAndOut 5s forwards;  /* 3 seconds total */
     animation-delay: 4s;  /* Start after other text */
 }
 
