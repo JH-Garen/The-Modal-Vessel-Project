@@ -116,11 +116,11 @@ button:hover {
 }
 
 /* Add blinking cursor to boot text */
-.boot-text::after {
+.boot-text1::after {
     content: '_';
     animation: blink 1s infinite;
 }
 
-.boot-text:last-child::after {
+.boot-text1:last-child::after {
     content: ''; /* No cursor on last line */
 }
