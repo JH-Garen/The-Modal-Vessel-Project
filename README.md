@@ -21,7 +21,7 @@ Based on the **Codex Modalis** universe where magic is code, reality is a machin
 
 ## 🚀 Live Demo
 
-[Click here to play](https://JH-Garen.github.io/modal-vessel-os/)
+[Click here to play](https://jh-garen.github.io/The-Modal-Vessel-Project/)
 
 ## 📄 License & Copyright
 
