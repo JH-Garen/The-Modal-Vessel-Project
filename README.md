@@ -28,7 +28,7 @@ Based on the **Codex Modalis** universe where magic is code, reality is a machin
 - **Code:** This project is licensed under the [MIT License](LICENSE). 
   - *You are free to use the code for learning or portfolio purposes.*
   
-- **Lore & Content:** All creative content (Codex Modalis universe, characters, story, logos, design) is **© [Your Name] 2024. All Rights Reserved.**
+- **Lore & Content:** All creative content (Codex Modalis universe, characters, story, logos, design) is **© JH-Garen 2026. All Rights Reserved.**
   - *You are NOT permitted to use the lore, characters, or universe for commercial projects or derivative works without explicit permission.*
 
 ---
