@@ -86,9 +86,9 @@ button {
 
 /* Button hover effect */
 button:hover {
-    background-color: #f6f6f8;
+    background-color: #00ffff;
     color: #0a0a0a;
-    box-shadow: 0 0 20px #f6f6f8;
+    box-shadow: 0 0 20px #ff1100;
 }
 
 /* Fade-in animation */
