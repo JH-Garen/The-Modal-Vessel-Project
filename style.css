@@ -9,7 +9,7 @@
 .terminal {
     width: 100%;
     height: 100vh; /* Full viewport height */
-    background-color: #0a0a0a; /* Almost black */
+    background-color: #424242; /* Almost black */
     color: #8589c7; /* Hacker green 00ff00, changed to blue 0c148b  */
     font-family: 'Courier New', Courier, monospace; /* Monospace font */
     padding: 40px;
