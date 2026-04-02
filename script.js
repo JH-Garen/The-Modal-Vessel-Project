@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.boot-text1');
     
     // Typing speed (ms per character)
-    const typingSpeed = 100;
+    const typingSpeed = 21;
     
     // When to start typing (must match CSS animation-delay)
-    const startDelay = 4000; // 4 seconds
+    const startDelay = 1500; // 1.5 seconds
     
     // How long to wait after typing before fading out
-    const pauseAfterTyping = 1500;
+    const pauseAfterTyping = 100;
     
     // Start the effect after delay
     setTimeout(() => {
