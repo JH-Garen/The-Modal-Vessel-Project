@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding for special symbols -->
     <meta charset="UTF-8">
+    
+    <!-- Responsive design: scales on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal Vessel OS v4.0</title>
+    
+    <!-- Browser tab title -->
+    <title>Modal Vessel OS v5.1</title>
+    
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Main terminal container (black background, cyan glow) -->
     <div class="terminal">
+        
+        <!-- Screen container: centers content, max-width for readability -->
         <div class="screen">
-            <h1>MODAL VESSEL OS v4.1 - TEST PUSH</h1>
+            
+            <!-- Main title: Modal Vessel OS -->
+            <h1>MODAL VESSEL OS v5.1</h1>
+            
+            <!-- Boot sequence: system messages fade in sequentially -->
             <p class="boot-text">Boot Sequence Initiated...</p>
             <p class="boot-text">Loading Kernel...</p>
             <p class="boot-text">Checking Memory...</p>
             <p class="boot-text">Verifying User...</p>
             <p class="boot-text">Checking for the indifferent's trace...</p>
-            <p class="boot-text">Mnemosyc logging protocol...</p>
-            <p class="boot-text1">...You should had stopped me when you had your chance, Janus...</p>
+            <p class="boot-text">Mnemosyne logging protocol...</p>
+            
+            <!-- Indifferent/Janus quote: typed character-by-character via JavaScript -->
+            <!-- Split into two spans: one for text (JS types here), one for cursor (CSS blinks) -->
+            <p class="boot-text1">
+                <span id="indifferent-text"></span>
+                <span class="cursor">_</span>
+            </p>
 
+            <!-- Login choice: appears after boot sequence -->
             <div class="login-choice">
                 <p>How do you wanna join?</p>
                 <button id="guest-btn">GUEST</button>
                 <button id="admin-btn">ADMIN</button>
             </div>
+            
         </div>
     </div>
     
+    <!-- JavaScript file: handles typing effect and future interactivity -->
     <script src="script.js"></script>
+    
+    <!-- Footer: copyright notice (protected lore) -->
     <footer>
         <p>© 2024 [Your Name]. Codex Modalis Universe. All Rights Reserved.</p>
     </footer>
