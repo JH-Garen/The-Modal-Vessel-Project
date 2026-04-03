@@ -40,12 +40,41 @@
 
             <!-- Login choice: appears after boot sequence -->
             <div class="login-choice">
-                <p>How do you wanna join?</p>
+                <p>Pick a user to enter:</p>
                 <button id="guest-btn">GUEST</button>
                 <button id="admin-btn">ADMIN</button>
+                <button id="another-btn">ENTER AS ANOTHER USER</button>
             </div>
             
         </div>
+    <div class="guest-screen hidden">
+        <h1 class="guest-title">GUEST ACCESS</h1>
+        <div class="lore-row">
+            <span class="redacted">[REDACTED]</span>
+            <span class="lore-text">THE MODAL VESSEL</span>
+            <span class="redacted">[REDACTED]</span>
+        </div>
+
+        <div class="lore-row">
+            <span class="redacted">[REDACTED]</span>
+            <span class="lore-text">THE PRIME UNIVERSES</span>
+            <span class="redacted">[REDACTED]</span>
+        </div>
+
+        <div class="lore-row">
+            <span class="redacted">[REDACTED]</span>
+            <span class="lore-text">FLUXUS PERPETUA</span>
+            <span class="redacted">[REDACTED]</span>
+        </div>        
+
+        <p class="indifferent-whisper">
+            <span id="whisper-text"></span>
+            <span class="cursor">_</span>
+        </p>
+
+        <button id="back-btn" class="back-btn">BACK</button>
+    </div>
+
     </div>
     
     <!-- JavaScript file: handles typing effect and future interactivity -->
@@ -53,7 +82,7 @@
     
     <!-- Footer: copyright notice (protected lore) -->
     <footer>
-        <p>© 2024 [Your Name]. Codex Modalis Universe. All Rights Reserved.</p>
+        <p>© 2026 JH-Garen. Codex Modalis Universe. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

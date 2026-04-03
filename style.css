@@ -29,6 +29,52 @@
     margin: 0 auto; /* Center horizontally */
 }
 
+.hidden {
+    display: none;
+}
+
+.guest-screen {
+    text-align: center; /* center all content */
+    padding-top: 50px; /* Space from top*/
+    min-height: 100vh; /* Full height like terminal */
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.guest-screen.fade-in-content {
+    opacity: 1;
+}
+
+.guest-screen.animate-in {
+    animation: fadeInContent 0.5s forwards;
+}
+
+.guest-title{
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.lore-row {
+    display: flex;
+    justify-content: space-between; /* Spreads: left, center, right */
+    align-items: center; /* Vertically centers items */
+    margin: 30px 0; /* Space between rows */
+    font-size: 1.2rem;
+}
+
+.redacted {
+    color: #00ffff;
+    /* Optional: Add blur effect later */
+}
+
+.lore-text {
+    color: #00ffff;
+    font-weight: bold; /* Makes middle text stand out */
+    letter-spacing: 1px;
+}
+
 /* Main title */
 h1 {
     font-size: 2.5rem;
@@ -125,6 +171,31 @@ footer {
     border-top: 1px solid #00ffff;
 }
 
+.back-btn {
+    margin-top: 60px;
+    background-color: #001133;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.back-btn:hover {
+    background-color: #00ffff;
+    color: #0a0a0a;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+.fade-up{
+    animation: fadeUp 0.75s forwards !important;
+}
+
+.fade-down {
+    animation: fadeDown 0.75s forwards !important;
+}
 /* ========================================
    ANIMATIONS
    ======================================== */
@@ -151,4 +222,55 @@ footer {
 @keyframes fadeOutOnly {
     0%   { opacity: 1; transform: translateY(0); }
     100% { opacity: 0; transform: translateY(20px); }
+}
+
+@keyframes fadeUp {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-50px); } /* UP */
+}
+
+@keyframes fadeDown {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(50px); } /* DOWN */
+}
+
+@keyframes zoomDeeper {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(1.5); } /* Zoom IN while fading */
+}
+
+@keyframes fadeInContent {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.zoom-effect {
+    animation: zoomDeeper 0.75s forwards;
+}
+
+@keyframes vibrate {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+@keyframes turnRed {
+    0% { color: #00ffff; text-shadow: 0 0 10px #00ffff; }
+    50% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+    100% { color: #00ffff; text-shadow: 0 0 10px #00ffff; }
+}
+
+.vibrate-red {
+    animation: vibrate 0.4s ease-in-out,
+               turnRed 1.4s ease-in-out;
+}
+
+.indifferent-whisper {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 0.9rem;
+    opacity: 0; /* Hidden initially */
+    /* Same color as terminal (#00ffff), not red */
 }
